@@ -1,0 +1,1 @@
+export const runtimeCompiler = true;

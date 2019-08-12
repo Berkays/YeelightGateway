@@ -1,0 +1,9 @@
+{ //tsconfig.web.json
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "strict": true,
+        "module": "es2015",
+    },
+    "exclude": ["./server","./common"]
+}

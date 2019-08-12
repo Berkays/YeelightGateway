@@ -1,0 +1,47 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import "./fonts.scss";
+
+* {
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    position: relative;
+}
+
+#app {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+
+    h3 {
+        font-weight: 400;
+    }
+}
+
+body {
+    background: #70e1f5;
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+    background: linear-gradient(to right, #ffd194, #70e1f5);
+
+}
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.display-5 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}

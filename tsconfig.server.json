@@ -1,0 +1,10 @@
+{ //tsconfig.server.json
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "outDir": "./build/",
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true
+    },
+    "exclude": ["./client"]
+}

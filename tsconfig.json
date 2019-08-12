@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "target": "es5",
+        "downlevelIteration": true
+    },
+    "include": ["./client/**/*","./server/**/*","./common/**/*","./tests/**/*"]
+}

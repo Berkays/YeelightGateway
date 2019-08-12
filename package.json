@@ -1,0 +1,62 @@
+{
+    "name": "yeelight-gateway",
+    "version": "0.0.1",
+    "description": "Web application to easily manage local yeelight devices.",
+    "scripts": {
+        "lint": "tslint --project .",
+        "build:web": "parcel build ./client/index.pug -d ./build/client --no-source-maps",
+        "build:server": "tsc --project ./tsconfig.server.json",
+        "build": "npm run build:web && npm run build:server",
+        "dev:web": "parcel watch ./client/index.pug -d ./build/client --no-source-maps",
+        "dev:server": "tsc -w --project ./tsconfig.server.json & nodemon ./bin/www",
+        "start": "nodemon ./bin/www",
+        "test": "mocha --exit ./build/tests"
+    },
+    "keywords": [
+        "yeelight",
+        "gateway"
+    ],
+    "author": "Berkay GURSOY",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/chai": "^4.2.0",
+        "@types/chai-http": "^4.2.0",
+        "@types/dotenv": "^6.1.1",
+        "@types/express": "^4.17.0",
+        "@types/jquery": "^3.3.30",
+        "@types/mocha": "^5.2.7",
+        "@types/morgan": "^1.7.36",
+        "@vue/component-compiler-utils": "^3.0.0",
+        "chai": "^4.2.0",
+        "chai-http": "^4.3.0",
+        "parcel-bundler": "^1.12.3",
+        "pug": "^2.0.4",
+        "sass": "^1.22.9",
+        "tslint": "^5.18.0",
+        "typescript": "^3.5.3",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "@chenfengyuan/vue-number-input": "^1.1.1",
+        "axios": "^0.19.0",
+        "bootstrap": "^4.3.1",
+        "dotenv": "^8.0.0",
+        "express": "^4.17.1",
+        "http-status-codes": "^1.3.2",
+        "jquery": "^3.4.1",
+        "mocha": "^6.2.0",
+        "morgan": "^1.9.1",
+        "nodemon": "^1.19.1",
+        "popper.js": "^1.15.0",
+        "vue": "^2.6.10",
+        "vue-class-component": "^7.1.0",
+        "vue-element-loading": "^1.1.2",
+        "vue-hot-reload-api": "^2.3.3",
+        "vue-js-toggle-button": "^1.3.2",
+        "vue-property-decorator": "^8.2.1",
+        "yeelight-awesome": "^1.0.12"
+    },
+    "alias": {
+        "vue": "./node_modules/vue/dist/vue.common.js"
+    }
+}

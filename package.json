@@ -30,7 +30,7 @@
         "chai": "^4.2.0",
         "chai-http": "^4.3.0",
         "parcel-bundler": "^1.12.3",
-        "pug": "^2.0.4",
+        "pug": "^3.0.1",
         "sass": "^1.22.9",
         "tslint": "^5.18.0",
         "typescript": "^3.5.3",
